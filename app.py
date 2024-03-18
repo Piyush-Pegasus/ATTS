@@ -114,5 +114,6 @@ if __name__ == '__main__':
     with app.app_context():  # Ensure operations are within application context
         db.create_all()
         print("Database tables created successfully")
-    socketio.run(app)
+    app.run()
+    # socketio.run(app)
     # socketio.run(app,ssl_context=('cert.pem', 'key.pem'))
